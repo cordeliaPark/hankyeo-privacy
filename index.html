@@ -1,0 +1,344 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>한켜 개인정보처리방침</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --ink:      #1c1f26;
+    --ink-soft: #565c69;
+    --rule:     #dcdde1;
+    --paper:    #fbfaf8;
+    --card:     #ffffff;
+    --accent:   #4a6f8a;
+    --accent-bg:#eef3f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink:      #e6e7ea;
+      --ink-soft: #9aa0ab;
+      --rule:     #32363f;
+      --paper:    #14161a;
+      --card:     #1b1e24;
+      --accent:   #8fb4cd;
+      --accent-bg:#1e262e;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink:      #e6e7ea;
+    --ink-soft: #9aa0ab;
+    --rule:     #32363f;
+    --paper:    #14161a;
+    --card:     #1b1e24;
+    --accent:   #8fb4cd;
+    --accent-bg:#1e262e;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
+                 "Malgun Gothic", "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 6rem;
+  }
+
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.75rem; margin-bottom: 2.5rem; }
+  h1 {
+    font-family: Georgia, "Nanum Myeongjo", Batang, "AppleMyungjo", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 .4rem;
+    text-wrap: balance;
+  }
+  .meta { color: var(--ink-soft); font-size: .875rem; margin: 0; }
+
+  nav.lang { display: flex; gap: .5rem; margin-bottom: 1.5rem; }
+  nav.lang a {
+    font-size: .8125rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: .2rem .7rem;
+  }
+  nav.lang a:hover, nav.lang a:focus-visible { color: var(--accent); border-color: var(--accent); }
+
+  h2 {
+    font-family: Georgia, "Nanum Myeongjo", Batang, "AppleMyungjo", serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 3rem 0 .75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    text-wrap: balance;
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  h3 { font-size: 1rem; font-weight: 600; margin: 1.75rem 0 .4rem; }
+  p, li { margin: .6rem 0; }
+  ul { padding-left: 1.2rem; }
+  strong { font-weight: 600; }
+  code {
+    font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+    font-size: .875em;
+    background: var(--accent-bg);
+    padding: .1em .35em;
+    border-radius: 3px;
+  }
+  a { color: var(--accent); }
+
+  .summary {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin: 0 0 1rem;
+  }
+  .summary ul { margin: 0; }
+  .summary li { margin: .35rem 0; }
+
+  .tablewrap { overflow-x: auto; margin: 1rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .9375rem; }
+  th, td { text-align: left; vertical-align: top; padding: .55rem .75rem; border-bottom: 1px solid var(--rule); }
+  th { font-weight: 600; color: var(--ink-soft); font-size: .8125rem; letter-spacing: .03em; text-transform: uppercase; }
+
+  .notice {
+    border-left: 3px solid var(--accent);
+    background: var(--accent-bg);
+    padding: .85rem 1.1rem;
+    border-radius: 0 6px 6px 0;
+    margin: 1.25rem 0;
+  }
+  .notice p:first-child { margin-top: 0; }
+  .notice p:last-child { margin-bottom: 0; }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-soft);
+    font-size: .8125rem;
+  }
+  hr.langbreak { border: 0; border-top: 3px double var(--rule); margin: 5rem 0 3rem; }
+</style>
+
+<div class="wrap">
+
+<nav class="lang"><a href="#ko">한국어</a><a href="#en">English</a></nav>
+
+<header id="ko">
+  <h1>한켜 개인정보처리방침</h1>
+  <p class="meta">시행일 2026-08-20 · 버전 1.0 · 앱 패키지 <code>dev.cordelia.psychology</code></p>
+</header>
+
+<div class="summary">
+  <ul>
+    <li><strong>계정이 없습니다.</strong> 가입·로그인·이메일 입력이 없습니다.</li>
+    <li><strong>서버로 보내지 않습니다.</strong> 앱이 만드는 모든 기록은 기기 안에만 있습니다.</li>
+    <li><strong>보낼 수단 자체가 없습니다.</strong> 릴리스 빌드에는 인터넷 권한(<code>android.permission.INTERNET</code>)이 포함되지 않습니다.</li>
+    <li><strong>추적 도구가 없습니다.</strong> 분석·광고·크래시 리포팅 SDK를 넣지 않았습니다.</li>
+    <li><strong>지우면 끝입니다.</strong> 앱을 삭제하면 기록도 함께 사라집니다.</li>
+  </ul>
+</div>
+
+<h2>1. 이 방침이 다루는 것</h2>
+<p>이 방침은 모바일 애플리케이션 <strong>「한켜」</strong>(이하 "앱")에 적용됩니다. 앱은 <strong>네트워크 통신을 하지 않으며</strong>, 개발자는 이용자의 어떤 데이터도 수집·수신·보관하지 않습니다. 아래에서 "저장"이라고 쓴 것은 전부 <strong>이용자 본인의 기기 안에서 일어나는 저장</strong>을 뜻합니다.</p>
+
+<h2>2. 앱이 기기에 저장하는 정보</h2>
+<p>아래 항목은 이용자가 앱을 쓰면서 직접 만드는 기록이며, 기기 내부의 암호화된 데이터베이스에 저장됩니다. 개발자를 포함한 누구에게도 전송되지 않습니다.</p>
+
+<div class="tablewrap">
+<table>
+  <thead><tr><th>구분</th><th>내용</th></tr></thead>
+  <tbody>
+    <tr><td>감정 기록</td><td>선택한 감정 코드, 기록 시각, 방 안 배치 좌표, <strong>그날 남긴 한 줄(선택 입력, 최대 200자)</strong></td></tr>
+    <tr><td>진단 응답</td><td>마이크로 진단의 문항별 응답과 시작·완료 시각</td></tr>
+    <tr><td>자기 지도</td><td>진단 결과로 누적된 성향 축 점수와 응시 횟수</td></tr>
+    <tr><td>미래의 나에게</td><td><strong>이용자가 직접 쓴 물음과 답(각 최대 400자)</strong>, 봉한 시각·열리는 시각</td></tr>
+    <tr><td>진행 상태</td><td>빛 잔량, 온보딩 완료 여부, 데이터 구조 버전</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="notice">
+  <p><strong>자유 입력란에 대한 안내.</strong> "그날 남긴 한 줄"과 "미래의 나에게"는 이용자가 원하는 문장을 그대로 쓸 수 있는 칸입니다. 앱은 그 내용을 읽거나 분석하거나 전송하지 않지만, <strong>이름·연락처·타인의 정보처럼 민감한 내용은 적지 않기를 권합니다.</strong> 기기를 분실하거나 타인과 공유할 경우를 대비한 안내입니다.</p>
+</div>
+
+<h2>3. 앱이 수집하지 않는 정보</h2>
+<ul>
+  <li>이름, 이메일 주소, 전화번호, 생년월일 등 <strong>신원 정보</strong></li>
+  <li>계정·비밀번호 (앱에 로그인 기능이 없습니다)</li>
+  <li>위치 정보, 연락처, 통화 기록, 캘린더, 사진·미디어, 파일</li>
+  <li>카메라·마이크 입력</li>
+  <li><strong>광고 식별자(AAID/IDFA), 기기 고유 식별자</strong></li>
+  <li>앱 사용 통계, 화면 이동 경로, 세션 길이 등 <strong>행동 분석 데이터</strong></li>
+  <li>크래시 로그·성능 지표 (개발자에게 전송되는 형태의 것)</li>
+</ul>
+
+<h2>4. 이용 목적</h2>
+<p>제2항의 정보는 오직 <strong>앱 자체의 기능을 이용자에게 되돌려주기 위해</strong> 사용됩니다 — 방 화면에 결정을 배치하고, 지난 기록을 다시 보여주고, 자기 지도를 그리는 일입니다. 그 밖의 목적(마케팅, 프로파일링, 제3자 분석, 모델 학습 등)으로 사용하지 않습니다.</p>
+
+<h2>5. 제3자 제공 및 처리위탁</h2>
+<p><strong>없습니다.</strong> 앱에는 광고 네트워크, 분석 도구, 크래시 리포팅, 어트리뷰션, 소셜 로그인 SDK가 포함되어 있지 않습니다. 데이터가 기기를 떠나지 않으므로 제공·위탁·국외 이전이 발생하지 않습니다.</p>
+<p>다만 앱을 <strong>내려받는 경로</strong>인 앱 마켓(Google Play 등)은 그 자체의 개인정보처리방침에 따라 별도로 정보를 처리할 수 있습니다. 이는 앱의 통제 범위 밖이며, 해당 마켓의 방침을 참고하시기 바랍니다.</p>
+
+<h2>6. 보관 기간과 파기</h2>
+<ul>
+  <li>기록은 이용자가 삭제하기 전까지 기기에 남습니다. 개발자가 정한 만료 기간은 없습니다.</li>
+  <li><strong>앱 내 삭제</strong> — 설정 화면의 "전체 삭제"로 모든 기록을 지울 수 있습니다(2단계 확인).</li>
+  <li><strong>쓴 글만 지우기</strong> — 설정 화면의 "내가 쓴 글 모두 지우기"는 <strong>이용자가 직접 쓴 문장</strong>(그날 남긴 한 줄, 미래의 나에게 쓴 편지)만 지웁니다. 감정 기록·결정·자기 지도는 남습니다. 자유 입력란이 부담스러워졌을 때 기록 전체를 포기하지 않고 글만 거둬들이기 위한 것입니다.</li>
+  <li><strong>앱 삭제</strong> — 앱을 제거하면 앱 전용 저장 영역과 그 안의 데이터베이스가 운영체제에 의해 함께 삭제됩니다.</li>
+  <li>서버에 사본이 없으므로 <strong>삭제한 기록은 복구할 수 없습니다.</strong></li>
+</ul>
+
+<h2>7. 이용자의 권리</h2>
+<p>데이터가 이용자의 기기에만 있으므로, 열람·정정·삭제 권리는 <strong>개발자에게 요청할 필요 없이 이용자가 앱에서 직접</strong> 행사합니다. 설정 화면에서 기록을 파일로 내보내거나, 전체를 삭제하거나, <strong>직접 쓴 문장만 골라 지울</strong> 수 있습니다. 개발자는 이용자의 데이터에 접근할 수단이 없으므로 대신 열람하거나 삭제해 드릴 수 없습니다.</p>
+
+<h2>8. 안전성 확보 조치</h2>
+<ul>
+  <li>기기 내부 데이터베이스를 <strong>암호화</strong>하여 저장합니다.</li>
+  <li>암호화 키는 앱이 아니라 <strong>운영체제의 보안 저장소</strong>(Android Keystore / iOS Keychain)에 보관합니다.</li>
+  <li>앱은 다른 앱이 읽을 수 없는 <strong>앱 전용 저장 영역</strong>만 사용합니다.</li>
+  <li>네트워크 전송 경로를 만들지 않는 것 자체를 보안 조치로 삼습니다.</li>
+</ul>
+
+<h2>9. 앱이 요청하는 권한</h2>
+<p><strong>이용자에게 요청하는 시스템 권한이 없습니다.</strong> 위치·연락처·사진·카메라·마이크·알림 권한을 요청하지 않으며, 배포되는 릴리스 빌드에는 인터넷 권한도 포함되지 않습니다.</p>
+<p class="meta">앱 내부적으로 <code>dev.cordelia.psychology.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>이 선언되어 있습니다. 이는 Android 표준 라이브러리가 앱 내부 통신을 같은 서명 키를 가진 이 앱에만 한정하기 위해 자동으로 추가하는 항목으로, 이용자에게 아무런 접근 권한도 요구하지 않습니다.</p>
+
+<h2>10. 아동의 개인정보</h2>
+<p>앱은 연령·생년월일을 묻지 않으며 어떤 이용자로부터도 개인정보를 수집하지 않습니다. 따라서 아동으로부터 개인정보를 수집하는 일이 발생하지 않습니다.</p>
+
+<h2>11. 의료기기가 아님</h2>
+<div class="notice">
+  <p><strong>이 앱은 의료기기가 아니며 진단·치료를 제공하지 않습니다.</strong> 앱에 포함된 문항과 결과는 자기 이해를 돕기 위한 것이며 의학적 진단, 상담, 치료를 대체하지 않습니다.</p>
+  <p>지금 위기 상황에 있다면 앱을 닫고 전문기관에 연락하시기 바랍니다. 앱의 설정 화면과 온보딩에 지역별 상담 전화가 안내되어 있습니다.</p>
+</div>
+
+<h2>12. 방침의 변경</h2>
+<p>이 방침이 바뀌면 이 페이지의 시행일과 버전을 갱신합니다. 데이터 처리 방식이 이용자에게 불리하게 바뀌는 변경이 있을 경우, 앱 업데이트 시 앱 안에서 함께 안내합니다.</p>
+
+<h2>13. 문의</h2>
+<p>이 방침이나 앱의 개인정보 처리에 관한 문의는 아래로 보내주십시오.</p>
+<ul>
+  <li>개발자: <strong>cordelia</strong></li>
+  <li>이메일: <strong>cordelia.dev@gmail.com</strong></li>
+</ul>
+
+<hr class="langbreak">
+
+<header id="en">
+  <h1>Hankyeo Privacy Policy</h1>
+  <p class="meta">Effective 2026-08-20 · Version 1.0 · Package <code>dev.cordelia.psychology</code></p>
+</header>
+
+<div class="summary">
+  <ul>
+    <li><strong>No account.</strong> No sign-up, no login, no email.</li>
+    <li><strong>Nothing is sent to a server.</strong> Everything the app records stays on your device.</li>
+    <li><strong>There is no way to send it.</strong> The release build does not include the internet permission (<code>android.permission.INTERNET</code>).</li>
+    <li><strong>No tracking.</strong> No analytics, advertising, or crash-reporting SDKs are bundled.</li>
+    <li><strong>Delete and it is gone.</strong> Removing the app removes the data with it.</li>
+  </ul>
+</div>
+
+<h2>1. Scope</h2>
+<p>This policy applies to the mobile application <strong>Hankyeo</strong> ("the app"). The app performs <strong>no network communication</strong>, and the developer does not collect, receive, or store any user data. Every use of "store" below means storage <strong>on the user's own device</strong>.</p>
+
+<h2>2. Information the app stores on your device</h2>
+<p>The following is created by you as you use the app and is written to an encrypted database inside your device. None of it is transmitted to anyone, including the developer.</p>
+
+<div class="tablewrap">
+<table>
+  <thead><tr><th>Category</th><th>Contents</th></tr></thead>
+  <tbody>
+    <tr><td>Mood entries</td><td>Chosen emotion code, timestamp, position in the room, and an <strong>optional one-line note (up to 200 characters)</strong></td></tr>
+    <tr><td>Assessment answers</td><td>Per-question responses and start/completion times</td></tr>
+    <tr><td>Self Map</td><td>Cumulative trait-axis scores and the number of completed runs</td></tr>
+    <tr><td>Letters to your future self</td><td><strong>Questions and answers you write yourself (up to 400 characters each)</strong>, sealed and opening times</td></tr>
+    <tr><td>Progress state</td><td>Light balance, onboarding completion flag, data schema version</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="notice">
+  <p><strong>About the free-text fields.</strong> The daily note and the letters accept any text you choose to write. The app never reads, analyses, or transmits them, but we <strong>recommend not writing names, contact details, or information about other people</strong> — this is a precaution in case your device is lost or shared.</p>
+</div>
+
+<h2>3. Information the app does not collect</h2>
+<ul>
+  <li>Name, email address, phone number, date of birth, or other <strong>identity information</strong></li>
+  <li>Accounts or passwords (the app has no sign-in)</li>
+  <li>Location, contacts, call logs, calendar, photos, media, or files</li>
+  <li>Camera or microphone input</li>
+  <li><strong>Advertising identifiers (AAID/IDFA) or device identifiers</strong></li>
+  <li>Usage statistics, navigation paths, session lengths, or other <strong>behavioural analytics</strong></li>
+  <li>Crash logs or performance metrics transmitted to the developer</li>
+</ul>
+
+<h2>4. How the information is used</h2>
+<p>The data in section 2 is used solely to <strong>give the app's own features back to you</strong> — placing crystals in your room, showing you what you recorded before, and drawing your Self Map. It is not used for marketing, profiling, third-party analytics, or model training.</p>
+
+<h2>5. Sharing and processors</h2>
+<p><strong>None.</strong> The app bundles no advertising networks, analytics tools, crash reporters, attribution SDKs, or social login providers. Because data never leaves the device, there is no sharing, no processing by third parties, and no international transfer.</p>
+<p>The app store you download from (such as Google Play) processes information under its own privacy policy. That is outside the app's control; please refer to that store's policy.</p>
+
+<h2>6. Retention and deletion</h2>
+<ul>
+  <li>Records stay on your device until you delete them. The developer sets no expiry.</li>
+  <li><strong>In-app deletion</strong> — "Delete all" in Settings removes every record (two-step confirmation).</li>
+  <li><strong>Erase only what you wrote</strong> — "Delete everything you wrote" in Settings removes <strong>only the sentences you typed yourself</strong> (daily one-line notes and letters to your future self). Mood entries, crystals, and the Self Map remain. It exists so that second thoughts about the free-text fields do not force you to give up the rest of your record.</li>
+  <li><strong>Uninstalling</strong> — removing the app causes the operating system to delete its private storage and the database inside it.</li>
+  <li>There is no server-side copy, so <strong>deleted records cannot be recovered.</strong></li>
+</ul>
+
+<h2>7. Your rights</h2>
+<p>Because the data exists only on your device, you exercise access, correction, and deletion <strong>directly in the app</strong>, with no request to the developer. Settings lets you export your records to a file, delete everything, or <strong>erase just the sentences you wrote yourself</strong>. The developer has no means of accessing your data and therefore cannot retrieve or delete it on your behalf.</p>
+
+<h2>8. Security measures</h2>
+<ul>
+  <li>The on-device database is stored <strong>encrypted</strong>.</li>
+  <li>The encryption key is held in the <strong>operating system's secure store</strong> (Android Keystore / iOS Keychain), not in the app.</li>
+  <li>The app uses only its <strong>private storage area</strong>, which other apps cannot read.</li>
+  <li>Not building a network path in the first place is itself treated as a security measure.</li>
+</ul>
+
+<h2>9. Permissions requested</h2>
+<p><strong>The app requests no system permissions.</strong> It does not ask for location, contacts, photos, camera, microphone, or notification access, and the shipped release build does not include the internet permission either.</p>
+<p class="meta">The app declares <code>dev.cordelia.psychology.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> internally. This is added automatically by a standard Android library to restrict the app's internal messaging to this app alone (same signing key). It grants no access to anything and is never presented to the user.</p>
+
+<h2>10. Children's privacy</h2>
+<p>The app does not ask for age or date of birth and collects no personal information from any user. Consequently, no collection of personal information from children occurs.</p>
+
+<h2>11. Not a medical device</h2>
+<div class="notice">
+  <p><strong>This app is not a medical device and does not provide diagnosis or treatment.</strong> Its questions and results are intended to support self-understanding and are not a substitute for medical diagnosis, counselling, or treatment.</p>
+  <p>If you are in crisis, please close the app and contact a professional service. Region-specific helplines are shown during onboarding and in Settings.</p>
+</div>
+
+<h2>12. Changes to this policy</h2>
+<p>If this policy changes, the effective date and version on this page are updated. If a change alters data handling to the user's disadvantage, it will also be communicated inside the app at the corresponding update.</p>
+
+<h2>13. Contact</h2>
+<p>For questions about this policy or the app's handling of personal information:</p>
+<ul>
+  <li>Developer: <strong>cordelia</strong></li>
+  <li>Email: <strong>cordelia.dev@gmail.com</strong></li>
+</ul>
+
+<footer>
+  <p>한켜 · Hankyeo — <code>dev.cordelia.psychology</code><br>
+  최종 수정 2026-08-20 / Last updated 2026-08-20</p>
+</footer>
+
+</div>
