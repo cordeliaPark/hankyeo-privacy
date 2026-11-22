@@ -138,7 +138,7 @@
 
 <header id="ko">
   <h1>한켜 개인정보처리방침</h1>
-  <p class="meta">시행일 2026-11-21 · 버전 1.1 · 앱 패키지 <code>dev.cordelia.hankyeo</code></p>
+  <p class="meta">시행일 2026-11-22 · 버전 1.2 · 앱 패키지 <code>dev.cordelia.hankyeo</code></p>
 </header>
 
 <div class="summary">
@@ -152,7 +152,7 @@
 </div>
 
 <h2>1. 이 방침이 다루는 것</h2>
-<p>이 방침은 모바일 애플리케이션 <strong>「한켜」</strong>(이하 "앱")에 적용됩니다. 앱은 <strong>네트워크 통신을 하지 않으며</strong>, 개발자는 이용자의 어떤 데이터도 수집·수신·보관하지 않습니다. 아래에서 "저장"이라고 쓴 것은 전부 <strong>이용자 본인의 기기 안에서 일어나는 저장</strong>을 뜻합니다.</p>
+<p>이 방침은 모바일 애플리케이션 <strong>「한켜」</strong>(이하 "앱")에 적용됩니다. 앱은 <strong>네트워크 통신을 하지 않으며</strong>, 개발자는 앱을 통해 이용자의 어떤 데이터도 수집·수신·보관하지 않습니다. 이용자가 개발자에게 직접 보낸 메일만 예외이며 13항에서 설명합니다. 아래에서 "저장"이라고 쓴 것은 전부 <strong>이용자 본인의 기기 안에서 일어나는 저장</strong>을 뜻합니다.</p>
 
 <h2>2. 앱이 기기에 저장하는 정보</h2>
 <p>아래 항목은 이용자가 앱을 쓰면서 직접 만드는 기록이며, 기기 내부의 암호화된 데이터베이스에 저장됩니다. 개발자를 포함한 누구에게도 전송되지 않습니다.</p>
@@ -161,11 +161,12 @@
 <table>
   <thead><tr><th>구분</th><th>내용</th></tr></thead>
   <tbody>
-    <tr><td>감정 기록</td><td>선택한 감정 코드, 기록 시각, 방 안 배치 좌표, <strong>그날 남긴 한 줄(선택 입력, 최대 200자)</strong></td></tr>
+    <tr><td>감정 기록</td><td>선택한 감정 코드, 기록 시각, 방 안 배치 좌표, <strong>그날 남긴 한 줄(선택 입력, 최대 200자)</strong>, 그날 고른 있었던 일(앱에 정해진 목록에서 선택하는 선택 입력)</td></tr>
     <tr><td>진단 응답</td><td>마이크로 진단의 문항별 응답과 시작·완료 시각</td></tr>
     <tr><td>자기 지도</td><td>진단 결과로 누적된 성향 축 점수와 응시 횟수</td></tr>
     <tr><td>미래의 나에게</td><td><strong>이용자가 직접 쓴 물음과 답(각 최대 400자)</strong>, 봉한 시각·열리는 시각</td></tr>
-    <tr><td>진행 상태</td><td>빛 잔량, 온보딩 완료 여부, 데이터 구조 버전</td></tr>
+    <tr><td>진행 상태</td><td>빛 잔량, 온보딩 완료 여부, 데이터 구조 버전, 고른 질문 묶음(앱에 정해진 목록에서 고르는 선택 설정)</td></tr>
+    <tr><td>알림 설정</td><td>알림을 켰는지 여부, 이용자가 고른 요일과 시각</td></tr>
   </tbody>
 </table>
 </div>
@@ -188,7 +189,7 @@
 </ul>
 
 <h2>4. 이용 목적</h2>
-<p>제2항의 정보는 오직 <strong>앱 자체의 기능을 이용자에게 되돌려주기 위해</strong> 사용됩니다 — 방 화면에 결정을 배치하고, 지난 기록을 다시 보여주고, 자기 지도를 그리는 일입니다. 그 밖의 목적(마케팅, 프로파일링, 제3자 분석, 모델 학습 등)으로 사용하지 않습니다.</p>
+<p>제2항의 정보는 오직 <strong>앱 자체의 기능을 이용자에게 되돌려주기 위해</strong> 사용됩니다 — 방 화면에 결정을 배치하고, 지난 기록을 다시 보여주고, 자기 지도를 그리고, 이용자가 켠 경우 정한 시각에 알림을 띄우는 일입니다. 그 밖의 목적(마케팅, 프로파일링, 제3자 분석, 모델 학습 등)으로 사용하지 않습니다.</p>
 
 <h2>5. 제3자 제공 및 처리위탁</h2>
 <p><strong>없습니다.</strong> 앱에는 광고 네트워크, 분석 도구, 크래시 리포팅, 어트리뷰션, 소셜 로그인 SDK가 포함되어 있지 않습니다. 데이터가 기기를 떠나지 않으므로 제공·위탁·국외 이전이 발생하지 않습니다.</p>
@@ -199,13 +200,13 @@
 <ul>
   <li>기록은 이용자가 삭제하기 전까지 기기에 남습니다. 개발자가 정한 만료 기간은 없습니다.</li>
   <li><strong>앱 내 삭제</strong> — 설정 화면의 "전체 삭제"로 모든 기록을 지울 수 있습니다(2단계 확인).</li>
-  <li><strong>쓴 글만 지우기</strong> — 설정 화면의 "내가 쓴 글 모두 지우기"는 <strong>이용자가 직접 쓴 문장</strong>(그날 남긴 한 줄, 미래의 나에게 쓴 편지)만 지웁니다. 감정 기록·결정·자기 지도는 남습니다. 자유 입력란이 부담스러워졌을 때 기록 전체를 포기하지 않고 글만 거둬들이기 위한 것입니다.</li>
+  <li><strong>쓴 글만 지우기</strong> — 설정 화면의 "내가 쓴 글 모두 지우기"는 <strong>이용자가 직접 쓴 문장</strong>(그날 남긴 한 줄, 미래의 나에게 쓴 편지)만 지웁니다. 감정 기록·결정·자기 지도는 남습니다. 고른 있었던 일은 직접 쓴 문장이 아니므로 이 메뉴로 지워지지 않으며, 결정 화면에서 결정마다 지웁니다. 자유 입력란이 부담스러워졌을 때 기록 전체를 포기하지 않고 글만 거둬들이기 위한 것입니다.</li>
   <li><strong>앱 삭제</strong> — 앱을 제거하면 앱 전용 저장 영역과 그 안의 데이터베이스가 운영체제에 의해 함께 삭제됩니다.</li>
   <li>서버에 사본이 없으므로 <strong>삭제한 기록은 복구할 수 없습니다.</strong></li>
 </ul>
 
 <h2>7. 이용자의 권리</h2>
-<p>데이터가 이용자의 기기에만 있으므로, 열람·정정·삭제 권리는 <strong>개발자에게 요청할 필요 없이 이용자가 앱에서 직접</strong> 행사합니다. 설정 화면에서 기록을 파일로 내보내거나, 전체를 삭제하거나, <strong>직접 쓴 문장만 골라 지울</strong> 수 있습니다. 개발자는 이용자의 데이터에 접근할 수단이 없으므로 대신 열람하거나 삭제해 드릴 수 없습니다.</p>
+<p>데이터가 이용자의 기기에만 있으므로, 열람·정정·삭제 권리는 <strong>개발자에게 요청할 필요 없이 이용자가 앱에서 직접</strong> 행사합니다. 설정 화면에서 기록을 파일로 내보내거나, 전체를 삭제하거나, <strong>직접 쓴 문장만 골라 지울</strong> 수 있습니다. 개발자는 앱에 저장된 이용자의 데이터에 접근할 수단이 없으므로 대신 열람하거나 삭제해 드릴 수 없습니다.</p>
 
 <h2>8. 안전성 확보 조치</h2>
 <ul>
@@ -216,7 +217,8 @@
 </ul>
 
 <h2>9. 앱이 요청하는 권한</h2>
-<p><strong>이용자에게 요청하는 시스템 권한이 없습니다.</strong> 위치·연락처·사진·카메라·마이크·알림 권한을 요청하지 않으며, 배포되는 릴리스 빌드에는 인터넷 권한도 포함되지 않습니다.</p>
+<p><strong>요청하는 시스템 권한은 알림 허용 하나이며, 이용자가 설정에서 알림을 직접 켠 경우에만 요청합니다.</strong> 켜지 않으면 요청하지 않고, 거부해도 앱의 다른 기능은 그대로입니다. 위치·연락처·사진·카메라·마이크 권한은 요청하지 않으며, 배포되는 릴리스 빌드에는 인터넷 권한도 포함되지 않습니다.</p>
+<p><strong>알림.</strong> 기본은 꺼짐입니다. 켜면 일주일 중 고른 요일에 한 번까지, 고른 시각에 알림이 오고(요일을 바꾼 주에는 간격이 짧아질 수 있습니다), 앱을 열지 않으면 점점 드물어지다가 멈춥니다. 알림은 고른 시각보다 늦을 수 있고, 기기를 다시 시작하면 앱을 다시 열 때까지 오지 않습니다. 알림은 <strong>이용자의 기기 안에서만 예약</strong>되며 서버나 외부 알림 서비스를 거치지 않습니다. 알림에는 감정·한 줄·편지·진단 결과를 비롯한 <strong>개인 기록이 담기지 않습니다.</strong> 앱은 이용자가 앱을 언제 몇 번 열었는지, 알림을 눌렀는지를 저장하지 않습니다(「알림 끄기」를 눌렀다는 표시만 기기에 남겼다가, 다음에 앱을 열 때 설정에 반영하고 지웁니다). 알림 안의 「알림 끄기」나 설정에서 언제든 끌 수 있고, 앱 내 전체 삭제는 알림도 끕니다.</p>
 <p class="meta">앱 내부적으로 <code>dev.cordelia.hankyeo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>이 선언되어 있습니다. 이는 Android 표준 라이브러리가 앱 내부 통신을 같은 서명 키를 가진 이 앱에만 한정하기 위해 자동으로 추가하는 항목으로, 이용자에게 아무런 접근 권한도 요구하지 않습니다.</p>
 
 <h2>10. 아동의 개인정보</h2>
@@ -237,12 +239,13 @@
   <li>개발자: <strong>cordelia</strong></li>
   <li>이메일: <strong>cordelia.dev@gmail.com</strong></li>
 </ul>
+<p><strong>의견 보내기.</strong> 설정의 「의견 보내기」는 이용자의 메일 앱을 열 뿐입니다. 앱은 의견을 직접 받거나 전송하지 않으며, 앱에 담은 기록을 메일에 넣지 않습니다. 이용자가 직접 보낸 메일의 내용과 보낸 주소는 이용자와 개발자의 메일 서비스를 거쳐 개발자가 받습니다. 개발자는 이를 문의에 답하고 앱을 고치는 데에만 쓰고, 이용자가 요청하면 지웁니다.</p>
 
 <hr class="langbreak">
 
 <header id="en">
   <h1>Hankyeo Privacy Policy</h1>
-  <p class="meta">Effective 2026-11-21 · Version 1.1 · Package <code>dev.cordelia.hankyeo</code></p>
+  <p class="meta">Effective 2026-11-22 · Version 1.2 · Package <code>dev.cordelia.hankyeo</code></p>
 </header>
 
 <div class="summary">
@@ -256,7 +259,7 @@
 </div>
 
 <h2>1. Scope</h2>
-<p>This policy applies to the mobile application <strong>Hankyeo</strong> ("the app"). The app performs <strong>no network communication</strong>, and the developer does not collect, receive, or store any user data. Every use of "store" below means storage <strong>on the user's own device</strong>.</p>
+<p>This policy applies to the mobile application <strong>Hankyeo</strong> ("the app"). The app performs <strong>no network communication</strong>, and the developer does not collect, receive, or store any user data through the app. The only exception is email you choose to send to the developer yourself, described in section 13. Every use of "store" below means storage <strong>on the user's own device</strong>.</p>
 
 <h2>2. Information the app stores on your device</h2>
 <p>The following is created by you as you use the app and is written to an encrypted database inside your device. None of it is transmitted to anyone, including the developer.</p>
@@ -265,11 +268,12 @@
 <table>
   <thead><tr><th>Category</th><th>Contents</th></tr></thead>
   <tbody>
-    <tr><td>Mood entries</td><td>Chosen emotion code, timestamp, position in the room, and an <strong>optional one-line note (up to 200 characters)</strong></td></tr>
+    <tr><td>Mood entries</td><td>Chosen emotion code, timestamp, position in the room, an <strong>optional one-line note (up to 200 characters)</strong>, and what happened that day (optional, picked from a fixed list in the app)</td></tr>
     <tr><td>Assessment answers</td><td>Per-question responses and start/completion times</td></tr>
     <tr><td>Self Map</td><td>Cumulative trait-axis scores and the number of completed runs</td></tr>
     <tr><td>Letters to your future self</td><td><strong>Questions and answers you write yourself (up to 400 characters each)</strong>, sealed and opening times</td></tr>
-    <tr><td>Progress state</td><td>Light balance, onboarding completion flag, data schema version</td></tr>
+    <tr><td>Progress state</td><td>Light balance, onboarding completion flag, data schema version, your chosen question theme (an optional setting picked from a fixed list in the app)</td></tr>
+    <tr><td>Reminder settings</td><td>Whether reminders are on, and the day and time you chose</td></tr>
   </tbody>
 </table>
 </div>
@@ -292,7 +296,7 @@
 </ul>
 
 <h2>4. How the information is used</h2>
-<p>The data in section 2 is used solely to <strong>give the app's own features back to you</strong> — placing crystals in your room, showing you what you recorded before, and drawing your Self Map. It is not used for marketing, profiling, third-party analytics, or model training.</p>
+<p>The data in section 2 is used solely to <strong>give the app's own features back to you</strong> — placing crystals in your room, showing you what you recorded before, drawing your Self Map, and, if you turned reminders on, showing one at the time you chose. It is not used for marketing, profiling, third-party analytics, or model training.</p>
 
 <h2>5. Sharing and processors</h2>
 <p><strong>None.</strong> The app bundles no advertising networks, analytics tools, crash reporters, attribution SDKs, or social login providers. Because data never leaves the device, there is no sharing, no processing by third parties, and no international transfer.</p>
@@ -303,13 +307,13 @@
 <ul>
   <li>Records stay on your device until you delete them. The developer sets no expiry.</li>
   <li><strong>In-app deletion</strong> — "Delete all" in Settings removes every record (two-step confirmation).</li>
-  <li><strong>Erase only what you wrote</strong> — "Delete everything you wrote" in Settings removes <strong>only the sentences you typed yourself</strong> (daily one-line notes and letters to your future self). Mood entries, crystals, and the Self Map remain. It exists so that second thoughts about the free-text fields do not force you to give up the rest of your record.</li>
+  <li><strong>Erase only what you wrote</strong> — "Delete everything you wrote" in Settings removes <strong>only the sentences you typed yourself</strong> (daily one-line notes and letters to your future self). Mood entries, crystals, and the Self Map remain. What happened that day is picked, not typed, so this option does not remove it; you remove it per crystal on the crystal screen. It exists so that second thoughts about the free-text fields do not force you to give up the rest of your record.</li>
   <li><strong>Uninstalling</strong> — removing the app causes the operating system to delete its private storage and the database inside it.</li>
   <li>There is no server-side copy, so <strong>deleted records cannot be recovered.</strong></li>
 </ul>
 
 <h2>7. Your rights</h2>
-<p>Because the data exists only on your device, you exercise access, correction, and deletion <strong>directly in the app</strong>, with no request to the developer. Settings lets you export your records to a file, delete everything, or <strong>erase just the sentences you wrote yourself</strong>. The developer has no means of accessing your data and therefore cannot retrieve or delete it on your behalf.</p>
+<p>Because the data exists only on your device, you exercise access, correction, and deletion <strong>directly in the app</strong>, with no request to the developer. Settings lets you export your records to a file, delete everything, or <strong>erase just the sentences you wrote yourself</strong>. The developer has no means of accessing the data stored in the app and therefore cannot retrieve or delete it on your behalf.</p>
 
 <h2>8. Security measures</h2>
 <ul>
@@ -320,7 +324,8 @@
 </ul>
 
 <h2>9. Permissions requested</h2>
-<p><strong>The app requests no system permissions.</strong> It does not ask for location, contacts, photos, camera, microphone, or notification access, and the shipped release build does not include the internet permission either.</p>
+<p><strong>The app requests one system permission, notifications, and only if you turn reminders on yourself in Settings.</strong> If you never turn them on, it never asks; if you decline, everything else in the app works the same. It does not ask for location, contacts, photos, camera, or microphone access, and the shipped release build does not include the internet permission either.</p>
+<p><strong>Reminders.</strong> Off by default. When on, a reminder arrives at most once on the day you choose each week, at the time you choose (in a week when you change the day, the gap can be shorter); if you don't open the app, reminders become less frequent and then stop. A reminder can arrive later than the time you chose, and after your device restarts none arrive until you open the app again. Reminders are <strong>scheduled only on your device</strong> and do not pass through any server or push service. They contain <strong>none of your records</strong> — no feelings, notes, letters, or results. The app does not store when or how often you open it, or whether you tapped a reminder (only a mark that you pressed "Turn off reminders" is kept on the device until the app next opens, when it is applied to your settings and erased). You can turn reminders off anytime from the notification itself or in Settings, and "Delete all" turns them off too.</p>
 <p class="meta">The app declares <code>dev.cordelia.hankyeo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> internally. This is added automatically by a standard Android library to restrict the app's internal messaging to this app alone (same signing key). It grants no access to anything and is never presented to the user.</p>
 
 <h2>10. Children's privacy</h2>
@@ -341,10 +346,11 @@
   <li>Developer: <strong>cordelia</strong></li>
   <li>Email: <strong>cordelia.dev@gmail.com</strong></li>
 </ul>
+<p><strong>Send feedback.</strong> “Send feedback” in Settings only opens your mail app. The app itself neither receives nor sends feedback, and it puts none of your records into the email. The content of an email you send yourself, and the address it is sent from, reach the developer through your mail service and the developer's. The developer uses them only to answer you and improve the app, and deletes them if you ask.</p>
 
 <footer>
   <p>한켜 · Hankyeo — <code>dev.cordelia.hankyeo</code><br>
-  최종 수정 2026-08-20 / Last updated 2026-08-20</p>
+  최종 수정 2026-11-22 / Last updated 2026-11-22</p>
 </footer>
 
 </div>
